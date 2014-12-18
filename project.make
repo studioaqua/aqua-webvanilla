@@ -9,3 +9,6 @@ projects[drupal][patch][] = "https://drupal.org/files/issues/install-redirect-on
 ; Platform indicator module.
 projects[platform][version] = 1.3
 projects[platform][subdir] = contrib
+
+; Shiny Theme
+projects[] = shiny
