@@ -1,0 +1,56 @@
+<?php
+/**
+ * @file
+ * aquabasic.install
+ */
+
+/**
+ * Implements hook_install().
+ */
+function aquabasic_install()
+{
+}
+
+
+/**
+ * Implements hook_disable().
+ */
+function aquabasic_disable()
+{
+}
+
+
+/**
+ * Implements hook_uninstall().
+ */
+function aquabasic_uninstall()
+{
+}
+
+/**
+ * Set up the basic configuration for aqua's Drupal website
+ */
+function aquabasic_update_7100()
+{
+  // ---------------------------------------------
+  // 1. Disable useless modules
+  // ---------------------------------------------
+  $modules = array_filter(
+    array(
+      'overlay',
+      'toolbar_megamenu',
+      'toolbar',
+    ),
+    'module_exists'
+  );
+  module_disable($modules, TRUE);
+
+  // ---------------------------------------------------
+  // 2. Enables menu toolbar
+  // ---------------------------------------------------
+  $modules = array(
+    'admin_menu_toolbar',
+    'admin_theme',
+  );
+  module_enable($modules, TRUE);
+}

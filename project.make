@@ -10,5 +10,13 @@ projects[drupal][patch][] = "https://drupal.org/files/issues/install-redirect-on
 projects[platform][version] = 1.3
 projects[platform][subdir] = contrib
 
+; Aqua configuration base
+projects[admin_theme][version] = 1.0
+projects[admin_theme][subdir] = contrib
+
+projects[admin_menu][version] = 3.0-rc4
+projects[admin_menu][subdir] = contrib
+
+
 ; Shiny Theme
 projects[] = shiny
