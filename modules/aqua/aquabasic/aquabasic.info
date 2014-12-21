@@ -1,4 +1,4 @@
-name = Aquabasic Module
+name = Aquabasic
 description = This module implements the basic configuration for Drupal website built by Studio Aqua
 package = Aqua
 core = 7.x
