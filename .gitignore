@@ -5,3 +5,9 @@
 
 # Don't ignore Platform.sh configuration files.
 !.platform*
+
+# Ignore contributed projects downloaded by Drush make.
+modules/contrib/**
+themes/contrib/**
+libraries/*
+
