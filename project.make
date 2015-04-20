@@ -33,8 +33,11 @@ projects[entity_translation][subdir] = contrib
 projects[features][version] = "2.5"
 projects[features][subdir] = contrib
 
-projects[features_extra][version] = "1.0-beta1"
+projects[features_extra][version] = "1.5"
 projects[features_extra][subdir] = contrib
+
+projects[globalredirect][version] = "1.0-beta1"
+projects[globalredirect][subdir] = contrib
 
 projects[i18n][version] = "1.12"
 projects[i18n][subdir] = contrib
