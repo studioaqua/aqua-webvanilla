@@ -80,7 +80,7 @@ projects[title][patches][0] = "http://drupal.org/files/title-translation_overwri
 projects[title][subdir] = contrib
 
 projects[token][version] = "1.6"
-#projects[token][patches][0] = "http://drupal.org/files/token-token_asort_tokens-1712336_0.patch"
+;projects[token][patches][0] = "http://drupal.org/files/token-token_asort_tokens-1712336_0.patch"
 projects[token][subdir] = contrib
 
 projects[uuid][version] = "1.0-alpha6"
