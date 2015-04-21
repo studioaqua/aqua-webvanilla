@@ -113,3 +113,6 @@ projects[aquabasic][subdir] = aqua
 ; Themes
 projects[shiny][version] = "1.6"
 projects[shiny][subdir] = contrib
+
+projects[omega][version] = "4.3"
+projects[omega][subdir] = contrib
