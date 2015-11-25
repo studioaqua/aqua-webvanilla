@@ -123,6 +123,7 @@ projects[ds][version] = "2.11"
 projects[metatag][version] = "1.7"
 projects[pathauto][version] = "1.2"
 projects[globalredirect][version] = "1.5"
+projects[xmlsitemap][version] = "2.2"
 
 ; Development modules
 projects[devel][version] = "1.5"
