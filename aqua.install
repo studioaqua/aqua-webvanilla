@@ -289,7 +289,7 @@ function aqua_install()
   filter_format_save($full_html_format);
 
   // Enable the admin theme.
-  $admin_theme = 'aqua_admin';
+  $admin_theme = 'adminimal';
   theme_enable(array($admin_theme));
   variable_set('admin_theme', $admin_theme);
   variable_set('node_admin_theme', '1');
@@ -300,6 +300,32 @@ function aqua_install()
   {
     variable_set('admin_theme_path' , "admin/*\nuser/*\nusers/*\nnode/add/*\nnode/*/edit\nnode/*/translate\nnode/*/delete");
   }
+
+  // Insert default pre-defined node types into the database.
+  $types = array(
+    array(
+      'type' => 'page',
+      'name' => st('Basic page'),
+      'base' => 'node_content',
+      'description' => st("Use <em>basic pages</em> for your static content, such as an 'About us' page."),
+      'custom' => 1,
+      'modified' => 1,
+      'locked' => 0,
+    ),
+  );
+
+  foreach ($types as $type) {
+    $type = node_type_set_defaults($type);
+    node_type_save($type);
+    node_add_body_field($type);
+  }
+
+  // "Basic page" configuration.
+  variable_set('node_options_page', array('status'));
+  variable_set('comment_page', COMMENT_NODE_HIDDEN);
+  variable_set('node_submitted_page', FALSE);
+  variable_set('pathauto_node_page_pattern', '[node:title]');
+
 
   // Only adrimistrator can create an user account creation.
   //variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
@@ -360,16 +386,19 @@ function aqua_install()
 
 }
 
-
 /**
- * Implements hook_requirements().
+ * Disables and enables modules.
  */
-/*
-function aqua_requirements($phase) {
-  $requirements = array();
+function aqua_update_7100() {
+  // Disable unused modules.
+  $modules = array(
+    'admin_menu_toolbar',
+  );
+  module_disable($modules, TRUE);
 
-  return $requirements;
+  // Enables menu toolbar.
+  $modules = array(
+    'adminimal_admin_menu',
+  );
+  module_enable($modules, TRUE);
 }
-*/
-
-
