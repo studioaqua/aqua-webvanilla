@@ -7,52 +7,32 @@ defaults[projects][subdir] = contrib
 ; Platform indicator module.
 projects[platform][version] = 1.3
 
-; Contrib modules
+; CodeBase modules
 projects[admin_theme][version] = 1.0
-
 projects[ctools][version] = "1.9"
-
 projects[date][version] = "2.9"
-
 projects[entity][version] = "1.6"
 projects[entityreference][version] = "1.1"
 projects[entityreference][patch][] = "http://drupal.org/files/1580348-universal-formatters-17.patch"
-
 projects[features][version] = "2.7"
 projects[features_extra][version] = "1.0"
 projects[uuid_features][version] = "1.0-alpha4"
-
 projects[inline_entity_form][version] = "1.6"
-
 projects[libraries][version] = "2.2"
-
 projects[mailsystem][version] = "2.34"
-
 projects[message][version] = "1.11"
-
 projects[message_notify][version] = "2.5"
-
 projects[mimemail][version] = "1.0-beta4"
-
 projects[module_filter][version] = "2.0"
-
 projects[rules][version] = "2.9"
-
 projects[strongarm][version] = "2.0"
-
 projects[token][version] = "1.6"
-
 projects[uuid][version] = "1.0-beta1"
-
 projects[variable][version] = "2.5"
-
 projects[views][version] = "3.13"
 projects[views_megarow][version] = "1.5"
-
 projects[jquery_update][version] = "2.7"
-
 projects[shs][version] = "1.6"
-
 projects[link][version] = "1.3"
 
 ; Cookies
@@ -63,7 +43,6 @@ projects[menu_target][version] = "1.4"
 projects[admin_menu][version] = "3.0-rc5"
 projects[adminimal_admin_menu][version] = "1.7"
 projects[taxonomy_menu][version] = "1.5"
-
 
 ; Internationalization and Localization
 projects[i18n][version] = "1.13"
@@ -82,17 +61,12 @@ libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.3/ckeditor_4.5.3_standard.zip"
 
 ; Media
-projects[adaptive_image][version] = "1.4"
+projects[picture][version] = "2.13"
 projects[media_browser_plus][version] = "3.0-beta3"
 projects[retina_images][version] = "1.0-beta4"
 projects[imageblock][version] = "1.3"
 projects[image_delta_formatter][version] = "1.0-rc1"
 ;projects[imagecache_actions][version] = "1.5"
-
-; Forms
-;projects[webform][version] = "4.12"
-;projects[webform_features][version] = "3.0-beta3"
-;projects[webform_uuid][version] = "1.3"
 
 ; Socials
 projects[fb_likebox][version] = "2.2"
