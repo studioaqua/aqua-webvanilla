@@ -385,20 +385,3 @@ function aqua_install()
   }
 
 }
-
-/**
- * Disables and enables modules.
- */
-function aqua_update_7100() {
-  // Disable unused modules.
-  $modules = array(
-    'admin_menu_toolbar',
-  );
-  module_disable($modules, TRUE);
-
-  // Enables menu toolbar.
-  $modules = array(
-    'adminimal_admin_menu',
-  );
-  module_enable($modules, TRUE);
-}

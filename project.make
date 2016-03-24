@@ -24,6 +24,7 @@ projects[message][version] = "1.11"
 projects[message_notify][version] = "2.5"
 projects[mimemail][version] = "1.0-beta4"
 projects[module_filter][version] = "2.0"
+projects[fpa][version] = "2.6"
 projects[rules][version] = "2.9"
 projects[strongarm][version] = "2.0"
 projects[token][version] = "1.6"
@@ -34,6 +35,9 @@ projects[views_megarow][version] = "1.5"
 projects[jquery_update][version] = "2.7"
 projects[shs][version] = "1.6"
 projects[link][version] = "1.3"
+
+; Google Maps
+projects[simple_gmap][version] = "1.2"
 
 ; Cookies
 projects[eu_cookie_compliance][version] = "1.14"
@@ -50,7 +54,6 @@ projects[title][version] = "1.0-alpha7"
 projects[title][patches][0] = "http://drupal.org/files/title-translation_overwrite-1269076-35.patch"
 projects[entity_translation][version] = "1.0-beta4"
 projects[entity_translation][patch][] = "https://www.drupal.org/files/issues/entity_translation-more-defensive-code.patch"
-projects[webform_localization][version] = "4.x-dev"
 
 ; Wysiwyg editor
 projects[ckeditor_link][version] = "2.3"
@@ -81,14 +84,6 @@ projects[context_omega][version] = "1.1"
 ;projects[panels_everywhere][version] = "1.0-rc2"
 projects[ds][version] = "2.11"
 
-; SEO
-projects[metatag][version] = "1.7"
-projects[pathauto][version] = "1.3"
-projects[globalredirect][version] = "1.5"
-projects[xmlsitemap][version] = "2.2"
-projects[redirect][version] = "1.0-rc3"
-projects[google_analytics][version] = "2.1"
-projects[simple_gmap][version] = "1.2"
 
 ; Development modules
 projects[devel][version] = "1.5"
@@ -112,9 +107,21 @@ projects[aquaform][download][url] = "https://github.com/studioaqua/aquaform.git"
 projects[aquaform][download][branch] = "master"
 projects[aquaform][type] = "module"
 projects[aquaform][subdir] = aqua
+; Web marketing
+projects[aquamarketing][download][type] = "git"
+projects[aquamarketing][download][url] = "https://github.com/studioaqua/aquamarketing.git"
+projects[aquamarketing][download][branch] = "master"
+projects[aquamarketing][type] = "module"
+projects[aquamarketing][subdir] = aqua
 
 ; Themes
+;---------
 projects[shiny][version] = "1.7"
 projects[omega][version] = "4.4"
 projects[adminimal_theme][version] = "1.24"
-
+; Aqua admin theme
+projects[aqua_admin][download][type] = "git"
+projects[aqua_admin][download][url] = "https://github.com/studioaqua/aqua_admin.git"
+projects[aqua_admin][download][branch] = "master"
+projects[aqua_admin][type] = "theme"
+projects[aqua_admin][subdir] = aqua

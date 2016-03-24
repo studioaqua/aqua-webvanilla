@@ -43,7 +43,7 @@ dependencies[] = title
 dependencies[] = variable
 
 ; Install contribs for aqua basic configuration.
-dependencies[] = admin_menu_toolbar
+dependencies[] = adminimal_admin_menu
 dependencies[] = module_filter
 dependencies[] = image_delta_formatter
 dependencies[] = taxonomy_menu
